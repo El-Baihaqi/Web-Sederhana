@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+button a:hover {
+    border: none;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("bebas.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    width: 120px;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+}
+
+.navbar #logo {
+    padding-left: 100px;
+}
+
+.navbar ul {
+    padding-right: 100px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: gray;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar #logo {
+    color: #fff;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: gray;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid aqua;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: aqua;
+    color: #000000;
+}
+
+span {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.pendidikan {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: gray;
+}
+
+.pendidikan img {
+    height: auto;
+    width: 400px;
+}
+
+.about {
+    width: 550px;
+}
+
+.image {
+width: 1130px;
+max-width: 100%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-around;    
+}
+
+.about h2 {
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+
+
+button :hover {
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}
