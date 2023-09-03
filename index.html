@@ -40,27 +40,6 @@
         </div>
       </div>
     </section>
-
-    <script>
-      // Ambil elemen-elemen yang dibutuhkan
-      var banner = document.querySelector('.banner');
-      var navbar = document.querySelector('.navbar');
-
-      // Fungsi untuk mengubah tampilan navbar saat scroll
-      function changeNavbarBackground() {
-          if (window.scrollY > banner.offsetHeight) {
-              navbar.classList.add('scroll-navbar');
-          } else {
-              navbar.classList.remove('scroll-navbar');
-          }
-      }
-
-      // Tambahkan event listener ke jendela saat melakukan scroll
-      window.addEventListener('scroll', changeNavbarBackground);
-
-      // Panggil fungsi untuk mengatur tampilan awal
-      changeNavbarBackground();
-    </script>
   </body>
     
 </html>
